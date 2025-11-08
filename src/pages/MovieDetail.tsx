@@ -81,13 +81,36 @@ export default function MovieDetail() {
               </p>
             </div>
 
-            <div>
+            <div className="mb-8">
               <h2 className="mb-3 text-2xl font-bold text-foreground">Cast</h2>
               <div className="flex flex-wrap gap-2">
                 {movie.cast.map((actor) => (
                   <Badge key={actor} variant="secondary" className="px-4 py-2">
                     {actor}
                   </Badge>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h2 className="mb-4 text-2xl font-bold text-foreground">User Reviews</h2>
+              <div className="space-y-4">
+                {movie.reviews.map((review) => (
+                  <Card key={review.id} className="border-border bg-card p-4">
+                    <div className="mb-2 flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <span className="font-semibold text-foreground">{review.author}</span>
+                        <div className="flex items-center gap-1">
+                          <Star className="h-4 w-4 fill-accent text-accent" />
+                          <span className="font-semibold text-foreground">{review.rating}/10</span>
+                        </div>
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        {new Date(review.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                      </span>
+                    </div>
+                    <p className="text-muted-foreground">{review.comment}</p>
+                  </Card>
                 ))}
               </div>
             </div>

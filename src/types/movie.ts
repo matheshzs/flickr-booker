@@ -1,3 +1,11 @@
+export interface Review {
+  id: string;
+  author: string;
+  rating: number;
+  comment: string;
+  date: string;
+}
+
 export interface Movie {
   id: number;
   title: string;
@@ -9,6 +17,7 @@ export interface Movie {
   synopsis: string;
   cast: string[];
   showtimes: Showtime[];
+  reviews: Review[];
 }
 
 export interface Showtime {

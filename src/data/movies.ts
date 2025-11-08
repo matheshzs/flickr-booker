@@ -23,6 +23,11 @@ export const movies: Movie[] = [
       { id: "1c", time: "7:00 PM", theater: "IMAX", price: 20, availableSeats: 18 },
       { id: "1d", time: "9:45 PM", theater: "Screen 2", price: 12, availableSeats: 50 },
     ],
+    reviews: [
+      { id: "r1", author: "Sarah M.", rating: 9, comment: "Absolutely stunning visuals and a gripping story. One of the best sci-fi films in years!", date: "2024-01-15" },
+      { id: "r2", author: "Mike T.", rating: 8, comment: "Great cinematography and solid performances. A must-watch on IMAX.", date: "2024-01-10" },
+      { id: "r3", author: "Jessica L.", rating: 9, comment: "Mind-blowing experience! The future of cinema is here.", date: "2024-01-08" },
+    ],
   },
   {
     id: 2,
@@ -38,6 +43,10 @@ export const movies: Movie[] = [
       { id: "2a", time: "11:30 AM", theater: "Screen 3", price: 12, availableSeats: 38 },
       { id: "2b", time: "3:15 PM", theater: "Screen 2", price: 15, availableSeats: 25 },
       { id: "2c", time: "8:00 PM", theater: "Screen 3", price: 15, availableSeats: 12 },
+    ],
+    reviews: [
+      { id: "r4", author: "David K.", rating: 8, comment: "Edge-of-your-seat thriller with excellent plot twists. Denzel delivers as always.", date: "2024-01-12" },
+      { id: "r5", author: "Amanda R.", rating: 7, comment: "Good mystery with some predictable moments, but overall enjoyable.", date: "2024-01-09" },
     ],
   },
   {
@@ -55,6 +64,11 @@ export const movies: Movie[] = [
       { id: "3b", time: "4:30 PM", theater: "Screen 4", price: 15, availableSeats: 35 },
       { id: "3c", time: "7:30 PM", theater: "Screen 1", price: 15, availableSeats: 20 },
     ],
+    reviews: [
+      { id: "r6", author: "Emily P.", rating: 9, comment: "Beautiful romance that made me cry. Perfect date night movie!", date: "2024-01-14" },
+      { id: "r7", author: "Chris B.", rating: 8, comment: "Charming and heartfelt. The chemistry between leads is amazing.", date: "2024-01-11" },
+      { id: "r8", author: "Lisa H.", rating: 8, comment: "A lovely story set in a breathtaking city. Highly recommend!", date: "2024-01-07" },
+    ],
   },
   {
     id: 4,
@@ -70,6 +84,11 @@ export const movies: Movie[] = [
       { id: "4a", time: "1:00 PM", theater: "IMAX", price: 20, availableSeats: 28 },
       { id: "4b", time: "5:00 PM", theater: "IMAX", price: 20, availableSeats: 15 },
       { id: "4c", time: "9:00 PM", theater: "Screen 1", price: 18, availableSeats: 22 },
+    ],
+    reviews: [
+      { id: "r9", author: "Tom W.", rating: 10, comment: "Epic fantasy masterpiece! The dragon scenes are absolutely breathtaking.", date: "2024-01-13" },
+      { id: "r10", author: "Rachel S.", rating: 9, comment: "Best fantasy film since Lord of the Rings. A true cinematic achievement.", date: "2024-01-10" },
+      { id: "r11", author: "Kevin M.", rating: 9, comment: "Incredible world-building and action sequences. Can't wait for the sequel!", date: "2024-01-06" },
     ],
   },
   {
@@ -87,6 +106,10 @@ export const movies: Movie[] = [
       { id: "5b", time: "3:00 PM", theater: "Screen 5", price: 12, availableSeats: 48 },
       { id: "5c", time: "6:30 PM", theater: "Screen 4", price: 12, availableSeats: 40 },
     ],
+    reviews: [
+      { id: "r12", author: "Mark D.", rating: 7, comment: "Had some good laughs but not Kevin Hart's best work. Still entertaining.", date: "2024-01-09" },
+      { id: "r13", author: "Jennifer G.", rating: 8, comment: "Funny and uplifting! Great for a lighthearted evening.", date: "2024-01-05" },
+    ],
   },
   {
     id: 6,
@@ -102,6 +125,10 @@ export const movies: Movie[] = [
       { id: "6a", time: "2:00 PM", theater: "Screen 2", price: 12, availableSeats: 30 },
       { id: "6b", time: "8:30 PM", theater: "Screen 3", price: 15, availableSeats: 18 },
       { id: "6c", time: "10:30 PM", theater: "Screen 2", price: 15, availableSeats: 25 },
+    ],
+    reviews: [
+      { id: "r14", author: "Steven L.", rating: 7, comment: "Genuinely scary with great atmosphere. Not for the faint-hearted!", date: "2024-01-11" },
+      { id: "r15", author: "Nicole F.", rating: 6, comment: "Decent horror flick with some jump scares. Expected more from the cast.", date: "2024-01-08" },
     ],
   },
 ];
